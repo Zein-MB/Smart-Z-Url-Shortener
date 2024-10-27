@@ -1,0 +1,48 @@
+@font-face {
+  font-family: inputFont;
+  src: url(../Fonts/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+  font-family: headingFont;
+  src: url(../Fonts/Rowdies-Bold.ttf)
+}
+
+@font-face {
+  font-family: textFont;
+  src: url(../Fonts/Gugi-Regular.ttf)
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: textFont;
+  font-size: 20px;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
