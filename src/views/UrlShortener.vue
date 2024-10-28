@@ -77,7 +77,7 @@ export default {
           type="reset"
           @click="
             () => {
-              canBeCopied = !canBeCopied;
+              canBeCopied = false;
             }
           "
         >
